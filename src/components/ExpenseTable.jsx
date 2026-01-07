@@ -23,7 +23,7 @@ function ExpenseTable() {
           Transactions This Month
         </h2>
 
-        <table className="w-full text-sm">
+        <table className="w-full text-sm transition">
           <thead>
             <tr className="text-left text-blue-800 font-semibold border-b bg-gray-100">
               <th className="py-3 px-2 rounded-tl-xl">Payee</th>
