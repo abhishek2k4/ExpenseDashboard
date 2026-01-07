@@ -21,7 +21,7 @@ function PieChart() {
   //     ["Sleep", 7],
   //   ];
   const options = {
-    height: "100%",
+    height: "250px",
     width: "100%",
     chartArea: {
       width: "100%",
@@ -35,7 +35,9 @@ function PieChart() {
   };
 
   return (
-    <Chart chartType="PieChart" data={pieData} legendToggle options={options} />
+    <div className="h-full flex justify-center items-center">
+        <Chart chartType="PieChart" data={pieData} legendToggle options={options} />
+    </div>
   );
 }
 
