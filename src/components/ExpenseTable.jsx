@@ -25,11 +25,11 @@ function ExpenseTable() {
 
         <table className="w-full text-sm">
           <thead>
-            <tr className="text-left text-indigo-600 font-semibold border-b bg-gray-200">
-              <th className="py-3 px-2">Payee</th>
+            <tr className="text-left text-blue-800 font-semibold border-b bg-gray-100">
+              <th className="py-3 px-2 rounded-tl-xl">Payee</th>
               <th className="py-3">Date</th>
               <th className="py-3">Amount</th>
-              <th className="py-3">Category</th>
+              <th className="py-3 rounded-tr-xl">Category</th>
             </tr>
           </thead>
 
