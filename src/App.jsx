@@ -1,6 +1,5 @@
 import DashBoard from "./pages/DashBoard";
 
-
 function App() {
   return (
     <div className="bg-purple-100 flex flex-col h-screen">
@@ -9,7 +8,7 @@ function App() {
           &lt;&lt; December 2024 &gt;&gt;
         </h2>
       </center>
-      <DashBoard/>
+      <DashBoard />
     </div>
   );
 }
