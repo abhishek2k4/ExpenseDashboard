@@ -1,12 +1,15 @@
 import React from "react";
 import data from "../data/transactions.json";
 
-function TotalSpent() {
-  const month = "2023-10";
+function TotalSpent({ transactions, currentDate }) {
+  const selectedMonth = `${currentDate.getFullYear()}-${String(
+    currentDate.getMonth() + 1
+  ).padStart(2, "0")}`;
+  //  console.log(transactions);
 
-  const monthlyTotal = data
-    .filter((item) => item.date.startsWith(month))
-    .reduce((sum, item) => sum + item.amount, 0);
+   const total = transactions
+    .filter(t => t.date.startsWith(selectedMonth))
+    .reduce((sum, t) => sum + t.amount, 0);
 
   return (
     <div className="bg-white p-2 rounded-xl">
@@ -14,7 +17,7 @@ function TotalSpent() {
         <p className="font-bold text-sm text-gray-500">
           TOTAL SPENT THIS MONTH
           <span className="text-2xl text-black mx-2">
-             ₹{monthlyTotal.toFixed(2)}
+             ₹{total.toFixed(2)}
           </span>
         </p>
       </center>

@@ -18,8 +18,8 @@ function ExpenseTable() {
   };
   return (
     <div className="bg-white">
-      <div class="bg-white rounded-xl p-4">
-        <h2 class="text-xs font-semibold text-gray-400 uppercase mb-4">
+      <div className="bg-white rounded-xl p-4">
+        <h2 className="text-xs font-semibold text-gray-400 uppercase mb-4">
           Transactions This Month
         </h2>
 
