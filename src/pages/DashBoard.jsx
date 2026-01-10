@@ -25,7 +25,8 @@ function DashBoard() {
           <PieChart />
         </div>
         <div className="lg:col-span-3 md:h-120 bg-white p-2 rounded-xl">
-          <ExpenseTable />
+          <ExpenseTable  transactions={data}
+  currentDate={currentDate}/>
           <center>
             <DataDownloadBtn />
           </center>
